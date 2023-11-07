@@ -1,6 +1,6 @@
-import React from 'react'
 import { useState ,useContext} from 'react'
-import { TaskContext } from '../context/taskContext'
+import { TaskContext } from '../context/TaaskContext'
+import '../estilos/TaskForm.css'
 
 function TaskForm() {
     const [title, settitle] = useState("")
@@ -18,24 +18,25 @@ function TaskForm() {
     }
 
     return (
-        <div className='max-w-md mx-auto'>
-            <form onSubmit={handleSubmit} className='bg-slate-800 p-10 mb-4'>
-                <h1 className='text-2xl font-bold text-white mb-3'>Crea tu tarea</h1>
-        <input placeholder="Escribe tu tarea"
-        onChange={(e)=>settitle(e.target.value)}
-        value={title}
-        autoFocus
-        className='bg-slate-300 p-3 w-full mb-2'
-        />
-        <textarea placeholder='Escribe la descripcion de la tarea'
-        onChange={(e)=>setdescription(e.target.value)}
-        value={description}
-        className='bg-slate-300 p-3 w-full mb-2'
-        >
-        </textarea>
-        <button className='bg-indigo-300 px-3 py-1 text-white'>Guardar</button>
-    </form>
-        </div>
+        <div className='cont'>
+            <form className='form' onSubmit={handleSubmit}>
+            <h2 className='tituloD'>Crea tu tarea</h2>
+            <input placeholder="Escribe tu tarea"
+            onChange={(e)=>settitle(e.target.value)}
+            value={title}
+            autoFocus
+            className='task'
+            />
+            <textarea placeholder='Escribe la descripcion de la tarea'
+            onChange={(e)=>setdescription(e.target.value)}
+            value={description}
+            className='description'
+            >
+
+            </textarea>
+            <button className="save">Guardar</button>
+            </form>
+            </div>
     )
 }
 

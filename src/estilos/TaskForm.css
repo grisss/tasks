@@ -1,0 +1,96 @@
+.form{
+    width: 362px;
+    height: 203px;
+    background-color:#000413 ;
+    text-align: center;
+    border-radius: 0.9rem;
+    padding: 30px 20px;
+    margin-top: -1rem;
+}
+
+@media (max-width:500px){
+    .form{
+        width: 60%;
+        height: 130px;
+        margin-top: 1px;
+        margin-bottom: 62px;
+    }
+    .tituloD{
+        font-size: 16px;
+        margin-bottom: 10px;
+        margin-top: -9px;
+    }
+
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 6%;
+}
+.tituloP{
+    color: rgb(255, 255, 255);
+}
+.tituloD{
+    color: rgb(255, 255, 255);
+    background-color:#000413 ;
+}
+
+
+.save{
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    padding: 2px 11px;
+    border: none;
+    margin: 12px;
+    border-radius: 10px;
+    transition: transfor 0.3s ease;
+    opacity: absolute;
+    font-weight: 700;
+    margin-top: 4%;
+}
+.task{
+    background-color: aliceblue;
+    color: black;
+    border: none;
+    padding: 17px 70px;
+    text-align: center;
+
+}
+.description{
+    background-color: aliceblue;
+    color: black;
+    padding: 17px 70px;
+    text-align: center;
+}
+
+@media (max-width:500px){
+    .description{
+        padding: 10px 62px;
+        font-size:9px;
+        text-align: center;
+    }
+    .task{
+        padding: 10px 60px;
+        font-size: 9px;
+    }
+    .save{
+        font-size: 14px;
+        margin-top: 14px;
+    }
+}
+
+
+input :not([type=button]),
+input , textarea{
+    outline: none;
+    display: grid;
+    margin: 1.8%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+

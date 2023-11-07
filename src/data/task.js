@@ -1,3 +1,5 @@
+import.meta.hot
+
 export let tasks=[
     {
         id:0,
